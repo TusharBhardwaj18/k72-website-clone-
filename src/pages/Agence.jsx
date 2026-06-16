@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react' 
+import { useGSAP } from '@gsap/react'
 
 const Agence = () => {
+  const imagedivRef = useRef(null)
+  useGSAP(function(){
+    
+  })
   return (
-   <div>
-    <div className = ' absolute overflow-hidden w-[15vw] h-[20vw] top-30 left-85 rounded-3xl '>
+    <div>
+         <div className = 'section-1'>
+    <div ref={imagedivRef} className = ' absolute overflow-hidden w-[15vw] h-[20vw] top-30 left-85 rounded-3xl '>
       <img className='w-full h-full object-cover' src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7" alt="" />
     </div>
      <div className = ' relative font-[fontie 2]'>
@@ -17,6 +23,8 @@ TWO
       </div>
     </div>
    </div>
+   <div className="section-2 h-screen"></div>
+    </div>
   )
 }
 
