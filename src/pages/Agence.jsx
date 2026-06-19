@@ -27,7 +27,12 @@ const Agence = () => {
         start:'top center',
         end:'+=100%',
         pin:true,
-        scrub: true, 
+        pinspacing:true,
+        pinReparent:true,
+        pinType:'transform',
+        scrub: 1,
+        anticipatePin:1,
+        invalidateOnRefresh:true, 
 
         
         onUpdate: (elem) => {

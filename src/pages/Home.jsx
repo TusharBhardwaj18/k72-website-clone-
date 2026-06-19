@@ -5,7 +5,7 @@ import Homeherotop from "../components/home/Homeherotop"
 
 const Home = () => {
   return (
-    <div>
+    <div className = 'text-white'>
       <div className= 'w-screen h-screen fixed'>
         <Video />
       </div>
