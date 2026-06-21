@@ -2,6 +2,8 @@ import React from "react";
 import Video from "../components/home/video"
 import Homebottom from "../components/home/Homebottom"
 import Homeherotop from "../components/home/Homeherotop"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Home = () => {
   return (

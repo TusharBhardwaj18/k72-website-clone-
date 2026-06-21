@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import { useRef } from 'react'
-import NavContext from '../../context/NavContext'
+import {NavContext, navbarcolorcontext} from '../../context/NavContext'
 
 const Navbar = () => {
     const navgreenRef = useRef(null)
    const [navOpen, setNavOpen] = useContext(NavContext)
+   const [navColor, setNavColor] = useContext(navbarcolorcontext)
 
   return (
     <div className=' z-4 flex items-start  w-full fixed top-0 justify-between'>
@@ -27,9 +28,9 @@ const Navbar = () => {
                    className='h-12 bg-black relative w-[17vw]'>
                    
                     <div ref={navgreenRef} className='bg-[#D3FD50] transition-all absolute top-0  h-0 w-full '> </div>
-            <div className='relative flex flex-col justify-center items-end h-full px-20 gap-2 '>
-              <div className='w-20 h-0.5  bg-white'></div>
-                <div className='w-12 h-0.5 bg-white'></div>
+            <div className='relative flex flex-col justify-center items-end h-full px-10 gap-1 '>
+              <div className='w-13 h-0.5  bg-white'></div>
+                <div className='w-7 h-0.5 bg-white'></div>
                  </div>
                    </div>
     </div>

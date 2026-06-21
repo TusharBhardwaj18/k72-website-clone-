@@ -1,7 +1,7 @@
 import React, { useRef } from 'react' 
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'  
+import {ScrollTrigger} from 'gsap/ScrollTrigger'  
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -22,17 +22,13 @@ const Agence = () => {
   useGSAP(function(){
     gsap.to(imageDivRef.current,{
       ScrollTrigger:{
-        trigger:imageRef.current,
+        trigger:imageDivRef.current,
        // markers:true,
-        start:'top center',
-        end:'+=100%',
+        start:'top 28%',
+        end:'top -70%',
         pin:true,
         pinspacing:true,
-        pinReparent:true,
-        pinType:'transform',
-        scrub: 1,
-        anticipatePin:1,
-        invalidateOnRefresh:true, 
+       anticipatePin:1,
 
         
         onUpdate: (elem) => {
@@ -58,8 +54,8 @@ const Agence = () => {
 TWO
 </h1>
       </div>
-      <div className = ' pl-[41%] mt-10'>
-        <p className="text-4xl leading-tight"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
+      <div className = '  pl-[41%] mt-10'>
+        <p className="text-4xl font-semibold leading-tight"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
       </div>
     </div>
    </div>
