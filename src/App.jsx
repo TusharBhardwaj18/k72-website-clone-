@@ -10,13 +10,13 @@ import FullScreenNav from './components/Navigation/FullScreenNav'
 const App = () => {
  
   return (
-    <div >
+    <div className='overflow-x-hidden' >
     <Navbar />
     <FullScreenNav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/projects" element={<Project />} />
       </Routes>
     </div>
   )
